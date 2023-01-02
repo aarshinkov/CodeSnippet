@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{templates/contentTemplate}">
+<head>
+    <title>Code</title>
+</head>
+<body>
+<div layout:fragment="contentDiv">
+    <p>Code page</p>
+
+    <div class="language-java">
+        <span th:each="word : ${words}" th:text="${word}"></span>
+    </div>
+</div>
+</body>
+</html>

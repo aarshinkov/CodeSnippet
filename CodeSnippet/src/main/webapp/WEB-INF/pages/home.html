@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{templates/contentTemplate}">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<div layout:fragment="contentDiv">
+    <p>Home page</p>
+    <p th:text="#{test.test}"></p>
+
+    <!--<pre class="language-java" style="white-space: pre-wrap;" th:utext="${code}" th:if="${code != null}"></pre>-->
+
+    <!--<form th:action="@{/process}">-->
+        <!--<label for="html">String:</label>-->
+        <!--<br/>-->
+        <!--<textarea id="html" name="string" placeholder="Aa" style="white-space: pre-wrap; width: 100%; height: 400px;" required="required"></textarea>-->
+        <!--<br/>-->
+        <!--&lt;!&ndash;<input id="html" name="string" placeholder="This string" required="required"/>&ndash;&gt;-->
+        <!--<button type="submit">Submit</button>-->
+    <!--</form>-->
+</div>
+</body>
+</html>
